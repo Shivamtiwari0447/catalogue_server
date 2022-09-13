@@ -1,10 +1,10 @@
-package com.catalog.demo;
+package com.shivam.demo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CatalogueServerApplicationTests {
+class ServerApplicationTests {
 
 	@Test
 	void contextLoads() {
