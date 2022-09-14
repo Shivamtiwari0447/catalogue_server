@@ -1,9 +1,13 @@
 package com.catalog.persistence;
 
+import java.util.Optional;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.example.bean.Catalog;
+import com.catalog.bean.Product;
 
-public interface CatalogDao extends JpaRepository<Catalog, Integer> {
+public interface CatalogDao extends JpaRepository<Product, String> {
+	
+	Optional<Product> findProductByCode(String code);
 
 }

@@ -1,4 +1,4 @@
-package com.example.bean;
+package com.catalog.bean;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 @Entity
-public class Catalog {
+public class Product {
 	@Id
 	private Long id; 
     private String code;
