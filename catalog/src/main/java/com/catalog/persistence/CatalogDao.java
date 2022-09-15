@@ -8,6 +8,6 @@ import com.catalog.bean.Product;
 
 public interface CatalogDao extends JpaRepository<Product, String> {
 	
-	Optional<Product> findProductByCode(String code);
+	Product getProductByCode(String code);
 
 }

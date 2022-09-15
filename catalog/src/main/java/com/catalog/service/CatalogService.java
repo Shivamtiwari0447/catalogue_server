@@ -8,7 +8,7 @@ import com.catalog.bean.Product;
 public interface CatalogService {
 	
 	public List<Product> getAllProducts();
-	public Optional<Product> getProductByCode(String code);
+	public Product getProductByCode(String code);
 
 
 }

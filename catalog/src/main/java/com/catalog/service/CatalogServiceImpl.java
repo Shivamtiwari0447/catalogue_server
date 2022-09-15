@@ -22,8 +22,8 @@ public class CatalogServiceImpl implements CatalogService {
 	}
 	
 	@Override
-	public Optional<Product> getProductByCode(String code){
-		return catalogDao.findProductByCode(code);
+	public Product getProductByCode(String code){
+		return catalogDao.getProductByCode(code);
 		
 	}
 	

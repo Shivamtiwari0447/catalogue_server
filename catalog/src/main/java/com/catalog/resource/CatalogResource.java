@@ -23,7 +23,7 @@ public class CatalogResource {
 	}
 	
 	@GetMapping (path = "/products/code/{code}")
-	public Optional<Product> getProductByCode(@PathVariable("code") String code){
+	public Product getProductByCode(@PathVariable("code") String code){
 		return catalogService.getProductByCode(code);		
 	}
 

@@ -40,14 +40,14 @@ class CatalogServiceTest {
 	@Test
 	void testgetProductByCode() {
 		product=new Product(1L,"abc","something","this is something",150);
-		Mockito.when(catalogDao.findProductByCode(product.getCode())).thenReturn(null);
+		Mockito.when(catalogDao.getProductByCode(product.getCode())).thenReturn(product);
 		assertEquals(product, service.getProductByCode(product.getCode()));
 	}
 	@Test
 	void testgetProductByCode1() {
 		product=new Product();
-		Mockito.when(catalogDao.findProductByCode(product.getCode())).thenReturn(null);
-		assertEquals(product, service.getProductByCode(product.getCode()));
+		Mockito.when(catalogDao.getProductByCode(product.getCode())).thenReturn(null);
+		assertEquals(null, service.getProductByCode(product.getCode()));
 	}
 
 }
